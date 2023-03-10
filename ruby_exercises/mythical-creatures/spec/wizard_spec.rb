@@ -34,19 +34,29 @@ RSpec.describe Wizard do
 
   it 'starts rested' do
     # create wizard
+    wizard = Wizard.new('Jimmy')
     # .rested? returns true
+    expect(wizard.rested?).to be true
   end
 
   it 'can cast spells' do
     # create wizard
+    wizard = Wizard.new('Trace')
     # .cast returns "MAGIC MISSILE!"
+    expect(wizard.cast)
   end
 
   it 'gets tired after casting three spells' do
     # create wizard
+    wizard = Wizard.new('Landor')
     # casts spell twice
+    wizard.cast
+    wizard.cast
     # check if wizard is rested
+    expect(wizard.rested?).to be true
     # casts spell
+    wizard.cast
     # check wizard is not rested
+    expect(wizard.rested?).to be false
   end
 end
