@@ -1,5 +1,5 @@
 class Hobbit
-    attr_reader :name, :disposition, :age, :celebrate_birthday, :adult, :has_ring
+    attr_reader :name, :disposition, :age, :celebrate_birthday, :adult, :has_ring, :is_short
     def initialize(name, disposition = "homebody")
         @name = name
         @disposition = disposition
@@ -8,6 +8,7 @@ class Hobbit
         @adult = false
         @old = false
         @has_ring = assign_ring_on_creation
+        @is_short = true
     end
     def assign_ring_on_creation
         return true if self.name.downcase == "frodo"
@@ -29,6 +30,9 @@ class Hobbit
     def has_ring?
         has_ring
         
+    end
+    def is_short?
+        is_short
     end
         
         
