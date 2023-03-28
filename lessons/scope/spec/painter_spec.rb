@@ -1,7 +1,8 @@
 require './lib/painter'
 require './lib/paint'
+require 'rspec'
 
-describe Painter do
+RSpec.describe Painter do
   it 'test_it_exists' do
     the_painters_name = "Bob Ross"
     painter = Painter.new(the_painters_name)
