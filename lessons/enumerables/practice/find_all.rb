@@ -6,14 +6,14 @@ def find_all_even_numbers # done for you
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     numbers.find_all do |number|
       number.even?
-    end
+    
   end
 
   def find_all_odd_numbers
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     numbers.find_all do |number|
-      # Your code goes here
+      number.odd?
     end
 
     #  expected return value is [1, 3, 5, 7, 9]
@@ -70,10 +70,13 @@ def find_all_even_numbers # done for you
   def find_all_floats
     numbers = [3, 1.4, 3.5, 2, 4.9, 9.1, 8.0]
 
-    # Your code goes here
+rerturn_value = numbers.find_all do |number|
+  number.to be_f
+
+end
 
     #  expected return value is [1.4, 3.5, 4.9, 9.1, 8.0]
-  end
+
 
   def find_all_arrays
     elements = ["CAT", ["dog"], 23, [56, 3, 8], "AIMLESS", 43, "butter"]
@@ -101,6 +104,7 @@ def find_all_even_numbers # done for you
 # p find_all_words_ending_in_ing
 # p find_all_words_containing_e
 # p find_all_dinosaurs
-# p find_all_floats
+p find_all_floats
 # p find_all_arrays
 # p find_all_hashes
+end

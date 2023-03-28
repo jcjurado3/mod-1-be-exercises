@@ -5,15 +5,15 @@
 def capitalize
     names = ["alice", "bob", "charlie"]
 
-    # Your code goes here
+    rerturn_value = names.each do |name|
+        name.capitalize
+    end
 
     # expected return value is ["Alice", "Bob", "Charlie"]
 end
 
 def doubles
     numbers = [1, 2, 3, 4, 5]
-
-    # Your code goes here
 
     # expected return value is [2, 4, 6, 8, 10]
 end
@@ -29,7 +29,7 @@ end
 def lengths
     names = ["alice", "bob", "charlie", "david", "eve"]
 
-    # Your code goes here
+    # Your code goes hereruby
 
     # expected return value is [5, 3, 7, 5, 3]
 end
@@ -67,7 +67,7 @@ def trim_last_letter
 end
 
 
-# p capitalize
+p capitalize
 # p doubles
 # p squares
 # p lengths

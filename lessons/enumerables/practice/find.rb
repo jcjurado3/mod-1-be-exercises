@@ -15,8 +15,7 @@ end
 def no_waldo
     words = ["scarf", "sandcastle", "flag", "pretzel", "crow", "key"]
     found = words.find do |word|
-
-      # Your code goes here
+        word == "Waldo"
 
     end
 
@@ -25,8 +24,9 @@ end
 
 def find_waldo
     words = ["noise", "dog", "fair", "house", "waldo", "bucket", "fish"]
-
-    # Your code goes here
+    found = words.find do |word|
+        word == "Waldo"
+    end
 
     # expected return value is "waldo"
 end
@@ -34,7 +34,9 @@ end
 def cannot_find_3_letter_words
     words = ["piglet", "porridge", "bear", "blueberry"]
 
-    # Your code goes here
+rerturn_value = words.find do |word|
+    word.length == 3
+end
 
     # expected return value is nil
 end
@@ -89,7 +91,7 @@ end
 
 # p find_first_seven_letter_word
 # p no_waldo
-# p find_waldo
+p find_waldo
 # p cannot_find_3_letter_words
 # p find_13
 # p find_first_even_number
